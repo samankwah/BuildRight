@@ -73,16 +73,14 @@ body {
   cursor: pointer;
 }
 .btn-outlined {
-  color: #fff;
-  background-color: #007bff;
+  color: #b40000;
+  background-color: #fff;
   border-radius: 10px;
   padding: 20px;
 }
 .btn-outlined:hover {
   color: #fff;
   background-color: green;
-  border-radius: 10px;
-  padding: 20px;
 }
 
 .practice-card {
@@ -102,13 +100,21 @@ body {
 }
 
 /* .blog-card {
-}
+} */
 .body-link {
+  text-decoration: none;
+  padding: 10px 0px;
+  border-bottom: 2px solid #b40000;
 }
-.footer-link {
+/* .footer-link {
 } */
 
 /* Header Area */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
 .header-top {
   background: #333;
   color: #fff;
@@ -158,7 +164,7 @@ body {
 }
 
 .logo img {
-  max-height: 50px;
+  max-height: 30px;
 }
 
 .main-menu {
@@ -184,13 +190,14 @@ body {
 .main-menu ul li a {
   text-decoration: none;
   color: #333;
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
   display: block;
 }
 
 .main-menu ul li a:hover,
 .main-menu ul li a:focus {
-  color: #007bff;
+  color: #b40000;
+  border-bottom: 1px solid #b40000;
 }
 
 .submenu {
@@ -233,7 +240,7 @@ body {
   text-decoration: none;
   border-radius: 4px;
   margin-right: 15px;
-  border: 1px solid #000;
+  border: 1px solid #ff6f00;
 }
 
 .header-btn2 {
@@ -273,18 +280,18 @@ body {
 
 /* ----------------Hero Section------------------------- */
 #hero-section {
-  background-image: url(../assets/images/about1.jpg.webp);
+  background-image: url(../assets/images/city-736086_1280.jpg);
   background-color: #000;
   background-size: 100% 100%;
   width: 100vw;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #hero-overlay {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100%;
   color: white;
@@ -312,7 +319,7 @@ body {
 
 /* ----------------About Section------------------------- */
 #about-section {
-  padding: 40px 0px;
+  padding: 150px 0px;
 }
 #about-section .container {
   display: flex;
@@ -376,7 +383,7 @@ body {
 /* ----------------Feature Section------------------------- */
 #feature-section {
   background-color: #f8f4f4;
-  padding: 60px 0px 80px 0px;
+  padding: 60px 0px 150px 0px;
 }
 #feature-section .subtitle {
   text-align: center;
@@ -402,6 +409,11 @@ body {
   border-radius: 5px;
   text-align: center;
   font-weight: lighter;
+}
+
+#feature-section .feature-card img {
+  width: 50px;
+  height: 50px;
 }
 
 #feature-section .feature-form {
@@ -472,7 +484,7 @@ textarea:focus {
   max-width: 50%;
   margin: auto;
   text-align: center;
-  padding: 50px 10px;
+  padding: 100px 50px;
 }
 
 .clientele-container h2,
@@ -489,9 +501,9 @@ textarea:focus {
 
 .clientele-showcase {
   background-color: #000;
-  background-image: url(../assets/images/hero\ 3.jpg);
+  background-image: url(../assets/images/city-736086_1280.jpg);
   color: #fff;
-  padding: 50px 0;
+  padding: 100px 0;
   background-size: 100% 100%;
   width: 100vw;
   height: 60vh;
@@ -558,4 +570,198 @@ textarea:focus {
 }
 
 /* ----------------Blog Section------------------------- */
+#blog-section {
+  padding-bottom: 200px;
+}
+
+#blog-section .container {
+  width: 60%;
+}
+
+#blog-section .title-text {
+  width: 60%;
+  margin: 80px auto;
+}
+#blog-section .title-text h2,
+#blog-section .title-text p {
+  text-align: center;
+}
+#blog-section .blogs {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#blog-section .blog-card {
+  width: 50%;
+  position: relative;
+  height: 487px;
+  width: 526px;
+}
+
+.blog-image-container {
+  height: 334px;
+  width: 526px;
+  border-top-left-radius: 30%;
+}
+.blog-image-container img {
+  height: 334px;
+  width: 526px;
+  border-top-left-radius: 30%;
+}
+
+.card-text-container {
+  padding: 20px;
+  width: 80%;
+  /* height: 205px; */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+
 /* ----------------Footer Section------------------------- */
+#footer-section {
+  position: relative;
+  background-color: #2d0000;
+}
+#footer-section .contact-card {
+  display: flex;
+  position: absolute;
+  top: -80px;
+  background-color: #efe2e2;
+  padding: 30px;
+  width: 70%;
+  justify-content: space-between;
+}
+#footer-section .supporter-info {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-section .call-info {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-section .primary-btn {
+  border-radius: 40px;
+  font-weight: 700 !important;
+}
+
+#footer-section h4,
+#footer-section p {
+  margin: 0 5px;
+}
+.footer-top {
+  color: #fff;
+  padding: 180px 0px 50px 0px;
+  width: 60%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  width: 150px;
+  height: 100px;
+}
+.footer-nav {
+  margin-top: 80px;
+}
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.footer-nav ul li {
+  display: inline;
+}
+
+.footer-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-contact {
+  margin: 20px 0;
+  padding: 20px 0px;
+  border-top: 0.7px solid #573333;
+  border-bottom: 0.7px solid #573333;
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+.footer-contact-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.footer-social {
+  margin: 10px 0;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.footer-social i {
+  width: 30px !important;
+  height: 30px !important;
+  color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+.appointment-btn {
+  background-color: #fff;
+  color: #2c0d0d;
+  border: 1px solid #fff;
+  padding: 20px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: ease-in 0.2s;
+}
+
+.appointment-btn:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 16px;
+  color: #ccc;
+  text-align: center;
+}
+
+.heart {
+  color: red;
+}
